@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './ProjectsCard.scss';
-import PROJECTS_T from '../../assets/PROJECTS_T.svg';
+import PROJECTS_T from '../../assets/PROJECTS_t.svg';
 import SeeAllTab from '../SeeAllTab';
 import { useState, useEffect } from 'react';
 import { FaPalette, FaCode, FaVideo, FaGamepad, FaCamera, FaMobile, FaUserTie } from 'react-icons/fa';
