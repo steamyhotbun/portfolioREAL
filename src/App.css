@@ -1,0 +1,48 @@
+body, #root {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-image: linear-gradient(#373737 0%, #000000 100%), url('./assets/BG_LOGO.svg');
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, 400px 400px;
+  background-position: center, 0 0;
+  background-blend-mode: lighten;
+  font-family: 'Inconsolata', monospace;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Mobile Layout Styles */
+@media (max-width: 768px) {
+  body, #root {
+    background-size: 100% 100%, 200px 200px;
+  }
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px 40px;
+  margin-left: 240px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Mobile responsive main content */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 16px 20px;
+    padding-top: 100px; /* Account for mobile header */
+  }
+}
+

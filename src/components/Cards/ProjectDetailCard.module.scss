@@ -1,0 +1,588 @@
+$card-radius: 32px;
+$card-shadow: 0 8px 32px rgba(0,0,0,0.5);
+$card-padding: 48px;
+$card-max-width: 900px;
+
+.projectDetailPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.projectDetailCard {
+  background: #1d1d1d;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+  padding: 36px 40px;
+  max-width: 700px;
+  width: 100%;
+  min-height: auto;
+  margin: 48px auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  outline: rgb(43, 43, 43) solid 5px;
+  transform: skew(-8deg);
+  position: relative;
+}
+
+.cardContent {
+  transform: skew(8deg);
+  width: 100%;
+  padding: 0 24px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #b9a6e6;
+  text-align: center;
+}
+
+.cardText {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 16px 0 12px 0;
+  color: #b9a6e6;
+}
+
+// Narrative Section
+.narrativeSection {
+  .phaseSection {
+    margin-bottom: 24px;
+  }
+  
+  .phaseTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #b9a6e6;
+    text-transform: capitalize;
+  }
+}
+
+// Process Section (for details tab)
+.processTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #FBEDFF;
+  text-align: center;
+  font-style: normal !important;
+  font-family: inherit !important;
+}
+
+.processContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.processCard {
+  background: #1d1d1d;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  padding: 24px 32px;
+  width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+  box-sizing: border-box;
+  outline: rgb(43, 43, 43) solid 2px;
+  transform: skew(-4deg);
+  transition: all 0.3s ease;
+  font-style: normal !important;
+  
+  &:hover {
+    transform: skew(-4deg) translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  
+  @media (max-width: 1024px) {
+    width: 450px;
+    max-width: 450px;
+    padding: 20px 28px;
+  }
+  
+  @media (max-width: 768px) {
+    width: 95%;
+    max-width: 95%;
+    padding: 18px 24px;
+    border-radius: 16px;
+    outline-width: 1px;
+    transform: none;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+}
+
+.processCardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #b9a6e6;
+  text-transform: capitalize;
+  transform: skew(4deg);
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transform: none;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+.processCardText {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 0 12px 0;
+  font-style: normal !important;
+  transform: skew(4deg);
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transform: none;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
+}
+
+.processCardContent {
+  font-style: normal !important;
+  transform: skew(4deg);
+  
+  @media (max-width: 768px) {
+    transform: none;
+  }
+}
+
+.processCardList {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  
+  @media (max-width: 768px) {
+    padding-left: 16px;
+  }
+}
+
+.processCardListItem {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ccc;
+  margin-bottom: 6px;
+  
+  @media (max-width: 768px) {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+}
+
+// Timeline Section
+.timelineSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(43, 43, 43, 0.3);
+  border-radius: 12px;
+  border-left: 4px solid #b9a6e6;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.timelinePeriod {
+  font-weight: bold;
+  color: #b9a6e6;
+  font-size: 0.95rem;
+}
+
+.timelineTask {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.timelineHours {
+  color: #ccc;
+  font-size: 0.9rem;
+  text-align: right;
+  
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+// Contributors Section
+.contributorsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contributorItem {
+  padding: 16px;
+  background: rgba(43, 43, 43, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(185, 166, 230, 0.2);
+}
+
+.contributorName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #b9a6e6;
+}
+
+.contributorRole {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 0;
+}
+
+// Compact Contributors Section
+.contributorsCompact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contributorCompact {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  background: rgba(43, 43, 43, 0.3);
+  border-radius: 8px;
+  border-left: 3px solid #b9a6e6;
+}
+
+.contributorNameCompact {
+  font-weight: bold;
+  color: #b9a6e6;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.contributorRoleCompact {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+// Technical Section
+.technicalSection {
+  margin-bottom: 16px;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.techItem {
+  background: rgba(185, 166, 230, 0.2);
+  color: #b9a6e6;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(185, 166, 230, 0.3);
+}
+
+// Links Section
+.linksSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.linkItem {
+  padding: 16px;
+  background: rgba(43, 43, 43, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(185, 166, 230, 0.2);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: #b9a6e6;
+    transform: translateY(-2px);
+  }
+}
+
+// Links Section (standalone)
+.linksTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #FBEDFF;
+  text-align: center;
+  font-style: normal !important;
+  font-family: inherit !important;
+}
+
+.referencesTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 32px 0 24px 0;
+  color: #b9a6e6;
+  text-align: center;
+  transform: skew(8deg);
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.linkCard {
+  background: #1d1d1d;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  padding: 24px 32px;
+  width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+  box-sizing: border-box;
+  outline: rgb(43, 43, 43) solid 2px;
+  transform: skew(-4deg);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: skew(-4deg) translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  
+  @media (max-width: 1024px) {
+    width: 450px;
+    max-width: 450px;
+    padding: 20px 28px;
+  }
+  
+  @media (max-width: 768px) {
+    width: 95%;
+    max-width: 95%;
+    padding: 18px 24px;
+    border-radius: 16px;
+    outline-width: 1px;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+}
+
+.linkTitle {
+  margin-bottom: 8px;
+  
+  a {
+    color: #b9a6e6;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+    &:hover {
+      color: #d4c5f9;
+      text-decoration: underline;
+    }
+  }
+}
+
+.linkDescription {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+// Project Info
+.projectInfo {
+  margin-top: 24px;
+  padding: 16px;
+  background: rgba(43, 43, 43, 0.3);
+  border-radius: 12px;
+  
+  p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #ccc;
+    
+    strong {
+      color: #b9a6e6;
+    }
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .projectDetailPanel {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .projectDetailCard {
+    margin: 24px auto;
+    padding: 24px 28px;
+    max-width: 95%;
+    min-height: auto;
+    transform: none;
+    width: 100%;
+  }
+  
+  .cardContent {
+    transform: none;
+    padding: 0 16px;
+  }
+  
+  .cardTitle {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+  }
+  
+  .cardText {
+    font-size: 0.9rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.1rem;
+    margin: 14px 0 10px 0;
+  }
+  
+  .contributorsSection {
+    grid-template-columns: 1fr;
+  }
+  
+  .techList {
+    gap: 6px;
+  }
+  
+  .techItem {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+  
+  // Process cards mobile styles
+  .processTitle {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    transform: none;
+    font-style: normal !important;
+  }
+  
+  .processCard {
+    padding: 18px 24px;
+    transform: none;
+    max-width: 100%;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  .processCardTitle {
+    font-size: 1rem;
+    transform: none;
+    margin-bottom: 8px;
+  }
+  
+  .processCardText {
+    font-size: 0.85rem;
+    transform: none;
+    line-height: 1.4;
+    font-style: normal !important;
+  }
+  
+  .processCardContent {
+    transform: none;
+    font-style: normal !important;
+  }
+  
+  .processCardList {
+    padding-left: 16px;
+  }
+  
+  .processCardListItem {
+    font-size: 0.8rem;
+  }
+  
+  // Links mobile styles
+  .linksTitle {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+    transform: none;
+  }
+  
+  .referencesTitle {
+    font-size: 1.2rem;
+    margin: 24px 0 16px 0;
+    transform: none;
+  }
+  
+  .linkCard {
+    padding: 18px 24px;
+    transform: none;
+    max-width: 100%;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  .linkTitle {
+    transform: none;
+  }
+  
+  .linkDescription {
+    transform: none;
+  }
+}
