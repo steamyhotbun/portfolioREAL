@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './AboutCard.scss';
 import profileImg from '../../assets/profile.png';
 import PROFILE_T from '../../assets/PROFILE_T.svg';
-import ABOUT_T from '../../assets/ABOUT_T.svg';
+import ABOUT_T from '../../assets/ABOUT_t.svg';
 import SKILLS_T from '../../assets/SKILLS_T.svg';
 import MISSION_T from '../../assets/MISSION_T.svg';
 import SKILLS_TAB from '../../assets/skills_tab.svg';
