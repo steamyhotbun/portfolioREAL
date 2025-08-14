@@ -1,0 +1,71 @@
+.page-transition-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.1s ease;
+}
+
+.page-content.visible {
+  opacity: 1;
+}
+
+.page-content.hidden {
+  opacity: 0;
+}
+
+.wipe-overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #b9a6e6 0%, #8b7abf 100%);
+  z-index: 9999;
+  transition: left 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.wipe-overlay.active {
+  left: 0;
+  animation: wipeTransition 1.2s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+}
+
+@keyframes wipeTransition {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Add some visual flair to the wipe */
+.wipe-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-20deg);
+}
+
+/* Optional: Add a subtle shadow */
+.wipe-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 100%);
+}

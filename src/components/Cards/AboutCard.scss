@@ -1,0 +1,241 @@
+.about-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  background: #1d1d1d;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  padding: 48px;
+  max-width: 800px;
+  width: 100%;
+  min-height: 580px;
+  margin: 48px auto 0;
+  color: #fff;
+  box-sizing: border-box;
+  outline: rgb(43, 43, 43) solid 5px;
+  transform: skew(-8deg);
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 32px;
+    min-height: 450px;
+  }
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  transform: skew(8deg);
+  position: relative;
+  min-width: 320px;
+}
+
+.about-right {
+  flex: 2 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 40px;
+  transform: skew(8deg);
+  min-height: 480px;
+  height: 100%;
+}
+
+.profile-title {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: 2;
+
+  img {
+    height: 72px; 
+  }
+}
+
+.about-profile-img {
+  margin-top: 48px;
+
+  img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 28px;
+  }
+}
+
+.about-details {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.about-label {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.about-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.about-title.mission-title img { height: 48px; }
+
+.about-mission h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #b9a6e6;
+  text-align: left;
+}
+
+.about-skills h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #b9a6e6;
+  text-align: left;
+}
+
+.about-info-panel h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #b9a6e6;
+  text-align: left !important;
+}
+
+.about-mission p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #fff;
+  margin: 0;
+}
+
+.about-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: -40px;
+  width: 100%;
+}
+
+.tab-svg {
+  height: 100px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.active .tab-svg,
+.tab-svg:hover {
+  filter: drop-shadow(0 0 8px #b9a6e6);
+  transform: scale(1.02);
+}
+
+.about-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.about-content .about-info-panel h2 {
+  text-align: left !important;
+}
+
+.about-skills {
+  p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .about-card {
+    margin: 24px auto 0;
+    padding: 24px;
+    max-width: 95%;
+    min-height: auto;
+    transform: none;
+    
+    @media (max-width: 900px) {
+      flex-direction: column;
+      padding: 24px;
+    }
+  }
+  
+  .about-left {
+    min-width: auto;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    transform: none;
+  }
+  
+  .about-right {
+    padding-left: 0;
+    padding-top: 24px;
+    align-items: center;
+    text-align: center;
+    transform: none;
+  }
+  
+  .about-profile-img img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-details {
+    font-size: 0.9rem;
+    
+    div {
+      margin-bottom: 8px;
+    }
+  }
+  
+  .about-tabs {
+    gap: 12px;
+    margin-top: -20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .tab-svg {
+    height: 50px;
+    flex-shrink: 0;
+  }
+  
+  .about-title img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .about-skills ul,
+  .about-info-panel p,
+  .about-mission p,
+  .about-skills p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .about-skills h2,
+  .about-info-panel h2,
+  .about-mission h2 {
+    text-align: left !important;
+  }
+}
