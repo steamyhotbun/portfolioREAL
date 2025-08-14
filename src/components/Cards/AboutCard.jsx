@@ -7,7 +7,7 @@ import SKILLS_T from '../../assets/SKILLS_T.svg';
 import MISSION_T from '../../assets/MISSION_T.svg';
 import SKILLS_TAB from '../../assets/SKILLS_TAB.svg';
 import ABOUT_TAB from '../../assets/ABOUT_TAB.svg';
-import MISSION_TAB from '../../assets/mission_tab.svg';
+import MISSION_TAB from '../../assets/MISSION_TAB.svg';
 import SKILLS_TABi from '../../assets/SKILLS_TABi.svg';
 import ABOUT_TABi from '../../assets/ABOUT_TABi.svg';
 import MISSION_TABi from '../../assets/MISSION_TABi.svg';
