@@ -6,7 +6,7 @@ import TitleSVG from '../assets/TITLE.svg';
 import TypeLogoSVG from '../assets/TYPELOGO.svg';
 import HomeSVG from '../assets/HOME.svg';
 import AboutSVG from '../assets/about.svg';
-import DesignSVG from '../assets/design.svg';
+import DesignSVG from '../assets/DESIGN.svg';
 import ProjectsSVG from '../assets/projects.svg';
 
 const navItems = [
