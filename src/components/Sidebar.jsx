@@ -5,9 +5,9 @@ import ContactTab from './ContactTab';
 import TitleSVG from '../assets/TITLE.svg';
 import TypeLogoSVG from '../assets/TYPELOGO.svg';
 import HomeSVG from '../assets/HOME.svg';
-import AboutSVG from '../assets/about.svg';
+import AboutSVG from '../assets/ABOUT.svg';
 import DesignSVG from '../assets/DESIGN.svg';
-import ProjectsSVG from '../assets/projects.svg';
+import ProjectsSVG from '../assets/PROJECTS.svg';
 
 const navItems = [
   { to: '/home', label: 'HOME', icon: HomeSVG },
