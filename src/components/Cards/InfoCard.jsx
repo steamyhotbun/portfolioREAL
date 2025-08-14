@@ -1,6 +1,6 @@
 import styles from './InfoCard.module.scss';
 import cardPhoto from '../../assets/1_Home.png';
-import INTRO_T from '../../assets/INTRO_T.svg';
+import INTRO_T from '../../assets/INTRO_t.svg';
 import LearnMoreTab from '../LearnMoreTab';
 
 function InfoCard() {
