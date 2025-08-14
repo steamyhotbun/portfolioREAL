@@ -6,7 +6,7 @@ import ABOUT_T from '../../assets/ABOUT_t.svg';
 import SKILLS_T from '../../assets/SKILLS_T.svg';
 import MISSION_T from '../../assets/MISSION_T.svg';
 import SKILLS_TAB from '../../assets/skills_tab.svg';
-import ABOUT_TAB from '../../assets/about_tab.svg';
+import ABOUT_TAB from '../../assets/ABOUT_TAB.svg';
 import MISSION_TAB from '../../assets/mission_tab.svg';
 import SKILLS_TABi from '../../assets/SKILLS_TABi.svg';
 import ABOUT_TABi from '../../assets/ABOUT_TABi.svg';
