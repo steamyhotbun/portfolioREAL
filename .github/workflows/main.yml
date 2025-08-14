@@ -7,7 +7,6 @@ jobs:
     name: Deploy React
     runs-on: ubuntu-latest
     steps:
-      
 name: Get latest code
       uses: actions/checkout@v4
 name: Use Node.js 20
