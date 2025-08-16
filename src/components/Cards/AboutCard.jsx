@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './AboutCard.scss';
 import profileImg from '../../assets/profile.png';
 import PROFILE_T from '../../assets/PROFILE_T.svg';
@@ -12,40 +12,53 @@ import SKILLS_TABi from '../../assets/SKILLS_TABi.svg';
 import ABOUT_TABi from '../../assets/ABOUT_TABi.svg';
 import MISSION_TABi from '../../assets/MISSION_TABi.svg';
 
-
-import skillsData from '../../../data/skills.json';
 import aboutData from '../../../data/about.json';
 import missionData from '../../../data/mission.json';
 
-const tabContent = {
-  skills: (
-    <div className="about-skills">
-      <h2>I am constantly learning!</h2>
-      <p>{skillsData.description}</p>
-    </div>
-  ),
-  about: (
-    <div className="about-info-panel">
-      <h2>Who am I?</h2>
-      <p>{aboutData.description}</p>
-    </div>
-  ),
-  mission: (
-    <div className="about-mission">
-      <h2>Chase brilliance; inspire the world</h2>
-      <p>{missionData.description}</p>
-    </div>
-  ),
-};
-
-const tabTitles = {
-  skills: SKILLS_T,
-  about: ABOUT_T,
-  mission: MISSION_T,
-};
-
-
 function AboutCard({ activeTab, onTabChange }) {
+  const [skillsData, setSkillsData] = useState(null);
+
+  useEffect(() => {
+    // Load skills data dynamically
+    const loadSkillsData = async () => {
+      try {
+        const data = await import('../../../data/skills.json');
+        setSkillsData(data.default);
+      } catch (error) {
+        console.error('Failed to load skills data:', error);
+      }
+    };
+
+    loadSkillsData();
+  }, []);
+
+  const tabContent = {
+    skills: (
+      <div className="about-skills">
+        <h2>I am constantly learning!</h2>
+        <p>{skillsData?.description || 'Loading skills information...'}</p>
+      </div>
+    ),
+    about: (
+      <div className="about-info-panel">
+        <h2>Who am I?</h2>
+        <p>{aboutData.description}</p>
+      </div>
+    ),
+    mission: (
+      <div className="about-mission">
+        <h2>Chase brilliance; inspire the world</h2>
+        <p>{missionData.description}</p>
+      </div>
+    ),
+  };
+
+  const tabTitles = {
+    skills: SKILLS_T,
+    about: ABOUT_T,
+    mission: MISSION_T,
+  };
+
   const handleTabChange = (tab) => {
     if (onTabChange) {
       onTabChange(tab);
