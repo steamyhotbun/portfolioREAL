@@ -1,20 +1,35 @@
 ---
 deployment:
   tasks:
-    # Set up Node.js environment
+    # Set up environment variables
     - export DEPLOYPATH=/home/alden392/public_html/
-    - export NODE_VERSION=20
-    - source /opt/nvm/nvm.sh
-    - nvm use $NODE_VERSION
+    - export NODE_VERSION=18
     
-    # Install dependencies
-    - npm ci --legacy-peer-deps
+    # Set up Node.js environment with fallback
+    - source /opt/nvm/nvm.sh || echo "NVM not available, using system node"
+    - nvm use $NODE_VERSION || nvm use 16 || echo "Using system node"
+    
+    # Clear any existing node_modules and package-lock to prevent conflicts
+    - rm -rf node_modules package-lock.json || true
+    
+    # Install dependencies with timeout and better error handling
+    - timeout 600 npm install --legacy-peer-deps --no-audit --no-fund || (echo "npm install failed, trying with cache clean" && npm cache clean --force && npm install --legacy-peer-deps --no-audit --no-fund)
     
     # Build the application
     - npm run build
     
+    # Verify build was successful
+    - ls -la dist/ || (echo "Build failed - dist directory not found" && exit 1)
+    
+    # Clean deployment directory
+    - rm -rf $DEPLOYPATH/* || true
+    
     # Deploy built files to public_html
-    - /bin/cp -R dist/* $DEPLOYPATH
+    - /bin/cp -R dist/* $DEPLOYPATH/
     
     # Copy .htaccess for React routing
-    - /bin/cp .htaccess $DEPLOYPATH/.htaccess
+    - /bin/cp .htaccess $DEPLOYPATH/.htaccess || echo ".htaccess copy failed"
+    
+    # Set proper permissions
+    - find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - find $DEPLOYPATH -type d -exec chmod 755 {} \;
