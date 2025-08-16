@@ -9,15 +9,9 @@ import { FaPalette, FaCode, FaVideo, FaGamepad, FaCamera, FaMobile, FaUserTie } 
 import proj_1 from '../../assets/proj_1.png';
 import proj_2 from '../../assets/proj_2.png';
 import proj_3 from '../../assets/proj_3.png';
+import proj_4 from '../../assets/proj_4.png';
 
-// Project data with proper images
 const projects = [
-  { 
-    id: 'corsace-manga', 
-    name: "Corsace Manga", 
-    image: proj_1, 
-    tags: [{ icon: FaPalette, label: "Graphics" }, { icon: FaUserTie, label: "Product Manager" }] 
-  },
   { 
     id: 'mountain-bike-commercial', 
     name: "Mountain Bike Commercial", 
@@ -25,10 +19,22 @@ const projects = [
     tags: [{ icon: FaVideo, label: "Video" }, { icon: FaCamera, label: "Production" }] 
   },
   { 
-    id: 'corsace-closed-2024', 
-    name: "Project B Commercial", 
+    id: 'travel-commercial', 
+    name: "Travel Commercial", 
     image: proj_3, 
     tags: [{ icon: FaVideo, label: "Video" }, { icon: FaCode, label: "Development" }] 
+  },
+  { 
+    id: 'corsace-manga', 
+    name: "Corsace Manga", 
+    image: proj_1, 
+    tags: [{ icon: FaPalette, label: "Graphics" }, { icon: FaUserTie, label: "Product Manager" }] 
+  },
+  { 
+    id: 'corsace-rebrand-2025', 
+    name: "Corsace Rebrand 2025", 
+    image: proj_4, 
+    tags: [{ icon: FaPalette, label: "Graphics" }, { icon: FaUserTie, label: "Creative Lead" }] 
   },
 ];
 
@@ -52,14 +58,23 @@ function ProjectsCard() {
   }, []);
   
   return (
-    <div className="card-container" style={{ position: 'relative', zIndex: 10 }}>
-      <div className="card-content" style={{ justifyContent: 'center', position: 'relative' }}>
-        <div className="about-title projects-title" style={{ position: 'absolute', top: '-80px', left: '-2%', transform: 'translateX(-50%)', transform: 'rotate(-0.02turn)', zIndex: 10 }}>
-          <img src={PROJECTS_T} alt="Projects Title" />
-        </div>
-        <div className="carousel-container">
+    <div style={{ position: 'relative', width: '100%' }}>
+      {/* Projects Title - Positioned to overlap the card like before */}
+      <div className="projects-title-wrapper" style={{ 
+        position: 'absolute',
+        top: '-15px',
+        left: '18%',
+        zIndex: 15,
+        transform: 'rotate(-0.02turn)',
+        pointerEvents: 'none'
+      }}>
+        <img src={PROJECTS_T} alt="Projects Title" style={{ height: '60px', objectFit: 'contain' }} />
+      </div>
+      
+      <div className="card-container" style={{ position: 'relative', zIndex: 10 }}>
+        <div className="card-content" style={{ justifyContent: 'center', position: 'relative' }}>
+          <div className="carousel-container">
           {isMobile ? (
-            // Static display for mobile - shows latest project with info
             <div className="mobile-project-display">
               <div style={{ width: '100%', height: '160px', overflow: 'hidden' }}>
                 <img
@@ -86,7 +101,6 @@ function ProjectsCard() {
               </div>
             </div>
           ) : (
-            //desktop carousel with project data
             <Carousel
               responsive={responsive}
               arrows
@@ -121,6 +135,7 @@ function ProjectsCard() {
         </div>
       </div>
       <SeeAllTab />
+    </div>
     </div>
   );
 }

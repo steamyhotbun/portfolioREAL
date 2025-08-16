@@ -10,101 +10,128 @@ $card-max-width: 900px;
   width: 100%;
 }
 
-.why-work-card {
-  background: #1d1d1d;
-  border-radius: $card-radius;
-  box-shadow: $card-shadow;
-  padding: $card-padding;
-  max-width: $card-max-width;
-  width: 100%;
-  min-height: 400px;
-  margin: 48px auto;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  outline: rgb(43, 43, 43) solid 5px;
-  transform: skew(-8deg);
-  position: relative;
+// Title Section
+.why-work-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #FBEDFF;
+  text-align: center;
+  font-style: normal !important;
+  font-family: inherit !important;
 }
 
-.why-work-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  transform: skew(8deg);
-  gap: 32px;
-}
-
-.why-work-section {
-  width: 100%;
-  
-  h3 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 32px;
-    color: #fff;
-  }
-}
-
-.qualities {
+.why-work-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.quality-item {
-  h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #b9a6e6;
-    margin-bottom: 12px;
-  }
+  width: 100%;
   
-  p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #ccc;
-    margin: 0;
+  @media (max-width: 768px) {
+    gap: 16px;
   }
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .why-work-panel {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.why-work-card {
+  background: #1d1d1d;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  padding: 24px 32px;
+  width: 700px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  box-sizing: border-box;
+  outline: rgb(43, 43, 43) solid 5px;
+  transform: skew(-8deg);
+  transition: all 0.3s ease;
+  
+  // Counter-skew the content and make all text straight
+  .why-work-card-title,
+  .why-work-card-text {
+    transform: skew(8deg);
+    
+    // Ensure all nested text elements are straight
+    *, h1, h2, h3, h4, h5, h6, p, span, div, ul, ol, li {
+      transform: none !important;
+    }
   }
   
-  .why-work-card {
-    margin: 24px auto 0;
-    padding: 24px;
+  &:hover {
+    transform: skew(-8deg) translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  
+  @media (max-width: 1024px) {
+    width: 650px;
+    max-width: 650px;
+    padding: 20px 28px;
+  }
+  
+  @media (max-width: 768px) {
+    width: 95%;
     max-width: 95%;
-    min-height: auto;
+    padding: 18px 24px;
+    border-radius: 16px;
+    outline-width: 1px;
     transform: none;
-    width: 100%;
-  }
-  
-  .why-work-card-content {
-    transform: none;
-    gap: 24px;
-    width: 100%;
-  }
-  
-  .why-work-section h3 {
-    font-size: 1.4rem;
-  }
-  
-  .quality-item {
-    h4 {
-      font-size: 1.1rem;
+    
+    // On mobile, everything is straight - no skewing needed
+    .why-work-card-title,
+    .why-work-card-text {
+      transform: none !important;
     }
     
-    p {
-      font-size: 0.9rem;
+    &:hover {
+      transform: translateY(-2px);
     }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+}
+
+.why-work-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #b9a6e6;
+  text-transform: capitalize;
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+.why-work-card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+  font-style: normal !important;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .why-work-title {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
   }
 }
