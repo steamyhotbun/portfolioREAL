@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - /bin/cp -R dist/* /home/alden392/public_html/
-    - /bin/cp .htaccess /home/alden392/public_html/.htaccess
