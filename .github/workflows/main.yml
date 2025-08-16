@@ -7,20 +7,42 @@ jobs:
     name: 🚀 Deploy React
     runs-on: ubuntu-latest
     steps:
-      - name: Get latest code
+      - name: 🚚 Get latest code
         uses: actions/checkout@v4
-      - name: Use Node.js 20
-        uses: actions/setup-node@v2
+        
+      - name: 📦 Use Node.js 20
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
           
-      - name: ⛏️Build Project
+      - name: 🔍 Debug - List files
+        run: ls -la
+          
+      - name: ⚡ Install dependencies
+        run: npm ci --legacy-peer-deps
+        
+      - name: 🔍 Debug - Check package.json
+        run: cat package.json
+        
+      - name: ⛏️ Build Project
+        run: npm run build
+        
+      - name: 🔍 Debug - Check build output
         run: |
-          npm install --legacy-peer-deps
-          npm run build
+          echo "Build completed, checking dist folder:"
+          ls -la dist/
+          echo "Checking if index.html exists:"
+          ls -la dist/index.html
 
-      - name: Copy .htaccess to dist
-        run: cp .htaccess dist/.htaccess
+      - name: 📄 Copy .htaccess to dist
+        run: |
+          if [ -f .htaccess ]; then
+            cp .htaccess dist/.htaccess
+            echo ".htaccess copied successfully"
+          else
+            echo "Warning: .htaccess file not found in project root"
+          fi
         
       - name: 📁 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -30,3 +52,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "dist/"
           server-dir: "public_html/"
+          timeout: 300000

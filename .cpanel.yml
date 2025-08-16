@@ -1,0 +1,20 @@
+---
+deployment:
+  tasks:
+    # Set up Node.js environment
+    - export DEPLOYPATH=/home/alden392/public_html/
+    - export NODE_VERSION=20
+    - source /opt/nvm/nvm.sh
+    - nvm use $NODE_VERSION
+    
+    # Install dependencies
+    - npm ci --legacy-peer-deps
+    
+    # Build the application
+    - npm run build
+    
+    # Deploy built files to public_html
+    - /bin/cp -R dist/* $DEPLOYPATH
+    
+    # Copy .htaccess for React routing
+    - /bin/cp .htaccess $DEPLOYPATH/.htaccess
