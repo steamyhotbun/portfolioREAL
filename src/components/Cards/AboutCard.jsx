@@ -105,6 +105,47 @@ function AboutCard({ activeTab, onTabChange }) {
           onClick={() => handleTabChange('mission')}
         />
       </div>
+      
+      {activeTab === 'mission' && (
+        <div className="mission-goals-panel">
+          <h2 className="mission-goals-title">Goals</h2>
+          
+          <div className="mission-goals-container">
+            <div className="mission-goals-card">
+              <h3 className="mission-goals-card-title">Short Term</h3>
+              <p className="mission-goals-card-text">
+                I want to get into the streaming and VTubing scene to start my career. I feel 
+                it will help me get a good grasp on the streaming and online social media 
+                scene. I want to try working for a media company to constantly work on 
+                designing assets on a tight schedule to help refine my designing and work 
+                process. Learning internet culture and building connections with people with 
+                online influence will help my career in the long run.
+              </p>
+            </div>
+            
+            <div className="mission-goals-card">
+              <h3 className="mission-goals-card-title">Long Term</h3>
+              <p className="mission-goals-card-text">
+                Using all that I've learned from BCIT, I want to create either a game, manga, 
+                or any form of media that can be consumed. I want this piece of media to 
+                reflect my growth throughout my life and show my journey in finding my 
+                happiness. If whatever I make helps even one person feel happy and inspires 
+                them to better themselves, I would consider it a success.
+              </p>
+            </div>
+            
+            <div className="mission-goals-card">
+              <h3 className="mission-goals-card-title">Future Vision</h3>
+              <p className="mission-goals-card-text">
+                I also want to eventually host my own media company one day. I love leading 
+                projects and working with other talented people to create truly amazing 
+                projects. The combination of leadership, creativity, and collaboration 
+                excites me about building something meaningful in the media industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

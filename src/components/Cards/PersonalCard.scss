@@ -37,6 +37,14 @@ $card-max-width: 700px;
   gap: 32px;
 }
 
+// Ensure all text content is properly unskewed for better readability
+.personal-card-content h2,
+.personal-card-content h3,
+.personal-card-content p,
+.personal-item {
+  transform: none;
+}
+
 .personal-info {
   width: 100%;
   

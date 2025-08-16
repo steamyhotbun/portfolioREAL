@@ -38,13 +38,13 @@ function App () {
           <PageWipeTransition>
             <Suspense fallback={<PageLoader />}>
               <Routes>
-                <Route path='/' element={<About />} />
+                <Route path='/' element={<Home />} />
                 <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/design' element={<Design />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/project/:projectId' element={<ProjectDetailPage />} />
-                <Route path='*' element={<About />} />
+                <Route path='*' element={<Home />} />
               </Routes>
             </Suspense>
           </PageWipeTransition>

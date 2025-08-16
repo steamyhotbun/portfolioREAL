@@ -3,12 +3,26 @@ $card-shadow: 0 8px 32px rgba(0,0,0,0.5);
 $card-padding: 20px;
 $card-max-width: 800px;
 
+.mainTitleContainer {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.mainProjectTitle {
+  color: #b9a6e6;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 4px 16px rgba(35, 33, 41, 0.8);
+  font-family: 'Inconsolata', monospace;
+}
+
 .projectDetailContainer {
-  margin-top: 120px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .cardContainer {
@@ -20,7 +34,7 @@ $card-max-width: 800px;
   max-width: $card-max-width;
   width: 100%;
   min-height: 400px;
-  margin: 20px auto;
+  margin: 10px auto;
   color: #fff;
   display: flex;
   align-items: center;
@@ -110,7 +124,7 @@ $card-max-width: 800px;
 
 .projectInfo {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .infoRow {
@@ -129,6 +143,26 @@ $card-max-width: 800px;
 
 .value {
   color: #ccc;
+}
+
+.personalThoughts {
+  margin-top: 20px;
+  width: 100%;
+  
+  .thoughtsText {
+    color: #ccc;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid #b9a6e6;
+    font-style: italic;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .projectLinkSection {
@@ -175,22 +209,23 @@ $card-max-width: 800px;
 .actionBtn {
   background: rgba(95, 75, 139, 0.8);
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 8px 20px;
   color: #fff;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
+  transform: skew(-8deg);
 
   &:hover {
     background: rgba(185, 166, 230, 0.8);
-    transform: translateY(-2px);
+    transform: skew(-8deg) translateY(-2px);
   }
 
   &.active {
     background: rgba(185, 166, 230, 0.9);
-    transform: translateY(-2px);
+    transform: skew(-8deg) translateY(-2px);
     box-shadow: 0 4px 15px rgba(185, 166, 230, 0.3);
   }
 }
@@ -199,7 +234,47 @@ $card-max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+}
+
+.navigationControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 4px 0;
+  gap: 4px;
+}
+
+.projectNavigation {
+  display: flex;
+  gap: 4px;
+}
+
+.navBtn {
+  background: rgba(95, 75, 139, 0.8);
+  border: none;
+  border-radius: 12px;
+  padding: 6px 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inconsolata', monospace;
+
+  &:hover {
+    background: rgba(185, 166, 230, 0.8);
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    background: rgba(95, 75, 139, 0.4);
+    cursor: not-allowed;
+    transform: none;
+  }
 }
 
 .linksSection {
@@ -285,14 +360,34 @@ $card-max-width: 800px;
     }
   }
   
+  .personalThoughts {    
+    .thoughtsText {
+      font-size: 0.9rem;
+      padding: 12px;
+      text-align: left;
+    }
+  }
+  
   .actionButtons {
     flex-direction: column;
     gap: 12px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
     
     .actionBtn {
       width: 100%;
       max-width: 200px;
+      transform: none;
+      text-align: center;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+      
+      &.active {
+        transform: translateY(-2px);
+      }
     }
   }
   
@@ -318,5 +413,25 @@ $card-max-width: 800px;
   .backLink {
     margin-top: 24px;
     font-size: 16px;
+  }
+  
+  .navigationControls {
+    justify-content: center;
+    max-width: 95%;
+    gap: 4px;
+    margin: 4px 0;
+  }
+  
+  .projectNavigation {
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .navBtn {
+    padding: 6px 10px;
+    font-size: 14px;
+    min-width: auto;
+    text-align: center;
   }
 }

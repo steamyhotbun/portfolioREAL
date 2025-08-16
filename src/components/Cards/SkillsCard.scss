@@ -37,6 +37,14 @@ $card-max-width: 700px;
   gap: 24px;
 }
 
+// Ensure all text content is properly unskewed for better readability
+.skills-card-content h2,
+.skills-card-content p,
+.skill-item,
+.skills-card-header {
+  transform: none;
+}
+
 .skills-card-header {
   text-align: center;
   

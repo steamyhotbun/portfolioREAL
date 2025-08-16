@@ -16,27 +16,17 @@ const ProjectDetailCard = ({ projectData, activeTab }) => {
         return (
           <>
             <h2 className={styles.processTitle}>Project Process</h2>
-            {projectData.details.narrative && (
+            {projectData.details.goal && (
               <div className={styles.processContainer}>
-                {Object.entries(projectData.details.narrative).map(([phase, content]) => (
+                {/* Process Cards - matching the simple goal format */}
+                {projectData.details.narrative && Object.entries(projectData.details.narrative).map(([phase, content]) => (
                   <div key={phase} className={styles.processCard}>
                     <h3 className={styles.processCardTitle}>
                       {phase.charAt(0).toUpperCase() + phase.slice(1)}
                     </h3>
-                    {typeof content === 'string' ? (
-                      <p className={styles.processCardText}>{content}</p>
-                    ) : (
-                      <div className={styles.processCardContent}>
-                        <p className={styles.processCardText}>{content.description}</p>
-                        {content.points && (
-                          <ul className={styles.processCardList}>
-                            {content.points.map((point, index) => (
-                              <li key={index} className={styles.processCardListItem}>{point}</li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                    )}
+                    <p className={styles.processCardText}>
+                      {typeof content === 'string' ? content : content.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -71,11 +61,11 @@ const ProjectDetailCard = ({ projectData, activeTab }) => {
           <div className={styles.cardContent}>
             <h2 className={styles.cardTitle}>Contributors</h2>
             {projectData.details.contributors && (
-              <div className={styles.contributorsCompact}>
+              <div className={styles.contributorsSection}>
                 {projectData.details.contributors.map((contributor, index) => (
-                  <div key={index} className={styles.contributorCompact}>
-                    <span className={styles.contributorNameCompact}>{contributor.name}</span>
-                    <span className={styles.contributorRoleCompact}>{contributor.role}</span>
+                  <div key={index} className={styles.contributorItem}>
+                    <div className={styles.contributorName}>{contributor.name}</div>
+                    <div className={styles.contributorRole}>{contributor.role}</div>
                   </div>
                 ))}
               </div>
