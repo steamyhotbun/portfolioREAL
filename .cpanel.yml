@@ -1,13 +1,5 @@
 ---
 deployment:
   tasks:
-    # Reset any uncommitted changes in the server repository
-    - cd /home/alden392/repositories/portfolioREAL
-    - git reset --hard HEAD
-    - git clean -fd
-    - git pull origin main
-    
-    # Deploy the files
-    - export DEPLOYPATH=/home/alden392/public_html/
-    - /bin/cp -R dist/* $DEPLOYPATH/
-    - /bin/cp .htaccess $DEPLOYPATH/.htaccess
+    - /bin/cp -R dist/* /home/alden392/public_html/
+    - /bin/cp .htaccess /home/alden392/public_html/.htaccess
