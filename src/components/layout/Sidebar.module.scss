@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 252px;
+  width: 280px;
   height: 100vh;
   background-color: $bg-primary;
   z-index: $z-modal;
@@ -27,7 +27,7 @@
   position: fixed;
   top: 0;
   left: -20px;
-  width: 540px;
+  width: 600px;
   height: auto;
   z-index: $z-notification;
   pointer-events: none;
