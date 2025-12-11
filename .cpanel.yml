@@ -2,7 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/alden392/public_html/
-    - /bin/npm install
+    - /bin/npm install --production=false
     - /bin/npm run build
-    - /bin/cp -R dist/* $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -R dist/* $DEPLOYPATH/
+    - /bin/cp .htaccess $DEPLOYPATH/
