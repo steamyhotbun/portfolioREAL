@@ -1,6 +1,6 @@
 import React, { useState, lazy, Suspense } from 'react';
 import Container from '../components/Container';
-import AboutCard from '../components/Cards/about/AboutCard.jsx';
+import AboutCard from '../components/Cards/AboutCard.jsx';
 import PersonalCard from '../components/Cards/PersonalCard.jsx';
 // Eagerly import default tab components to avoid render flash
 import GraphicsDesignerCard from '../components/Cards/GraphicsDesignerCard.jsx';
