@@ -4,7 +4,7 @@
   position: fixed;
   top: 300px;
   left: 0;
-  width: 400px;
+  width: 360px;
   height: auto;
   z-index: $z-notification;
   pointer-events: none;
@@ -15,7 +15,7 @@
   top: -203px;
   left: -60px;
   width: 80%;
-  height: 660px; // Extend height here to make it longer
+  height: 594px; // Extend height here to make it longer
   display: block;
   pointer-events: none;
 }

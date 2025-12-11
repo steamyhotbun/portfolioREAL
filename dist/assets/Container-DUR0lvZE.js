@@ -1,1 +1,0 @@
-import{j as s}from"./index-Bb17laue.js";import"./react-vendor-B1g8zURh.js";const e="_customContainer_820pk_1";function r({children:r,style:t,className:n}){return s.jsx("div",{className:`${e} ${n||""}`,style:t,children:r})}export{r as C};
