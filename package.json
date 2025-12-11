@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run postbuild",
+    "postbuild": "node -e \"require('fs').copyFileSync('.htaccess', 'dist/.htaccess')\"",
     "build:analyze": "vite build --mode analyze",
     "lint": "eslint .",
     "preview": "vite preview"

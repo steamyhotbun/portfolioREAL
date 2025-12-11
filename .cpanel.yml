@@ -6,4 +6,3 @@ deployment:
     - /usr/bin/npm run build
     - /bin/rm -rf $DEPLOYPATH/*
     - /bin/cp -R dist/* $DEPLOYPATH/
-    - /bin/cp .htaccess $DEPLOYPATH/
