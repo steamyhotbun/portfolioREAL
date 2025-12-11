@@ -53,3 +53,4 @@ jobs:
           local-dir: "dist/"
           server-dir: "public_html/"
           timeout: 300000
+          dangerous-clean-slate: true
