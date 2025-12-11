@@ -1,0 +1,159 @@
+$card-max-width: min(90vw, 1200px);
+
+.whyWorkPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 48px 0;
+}
+
+.whyWorkTwoColumn {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  width: 100%;
+  max-width: 1800px;
+  
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 64px;
+  }
+}
+
+.whyWorkColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+// Title Section
+.whyWorkTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #fff;
+  text-align: center;
+  font-style: normal !important;
+  font-family: inherit !important;
+}
+
+.whyWorkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.cardWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.purpleAccent {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%) skewY(-2deg);
+  width: min(95%, 1100px);
+  height: calc(100% - 40px);
+  background: #A585AE;
+  z-index: 0;
+}
+
+.whyWorkCard {
+  background: #232129;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 32px 40px;
+  width: min(95%, 1100px);
+  max-width: min(95%, 1100px);
+  margin: 16px auto;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  min-height: 180px;
+  
+  @media (max-width: 1024px) {
+    width: 650px;
+    max-width: 650px;
+    padding: 20px 28px;
+  }
+  
+  @media (max-width: 768px) {
+    width: 95%;
+    max-width: 95%;
+    padding: 18px 24px;
+    border-radius: 16px;
+    outline-width: 1px;
+    transform: none;
+    
+    // On mobile, everything is straight - no skewing needed
+    .whyWorkCardTitle,
+    .whyWorkCardText {
+      transform: none !important;
+    }
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+}
+
+.whyWorkCardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #fff;
+  text-transform: capitalize;
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+.whyWorkCardText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  font-weight: 400;
+  font-style: normal !important;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .why-work-title {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,116 @@
+.personalPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.personalCard {
+  position: relative;
+  background: #232129;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 48px 0;
+  max-width: min(90vw, 1000px);
+  width: 100%;
+  min-height: 400px;
+  margin: 48px auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    right: -16px;
+    bottom: -8px;
+    background: #A585AE;
+    transform: skew(-2deg);
+    z-index: -1;
+  }
+}
+
+.personalCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+  padding: 0 48px;
+}
+
+.personalInfo {
+  width: 100%;
+  
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #b9a6e6;
+    text-align: center;
+  }
+}
+
+.personalDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.personalItem {
+  h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #b9a6e6;
+  }
+  
+  p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .personalPanel {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .personalCard {
+    margin: 24px auto;
+    padding: 24px 0;
+    max-width: 95%;
+    min-height: auto;
+    width: 100%;
+  }
+  
+  .personalCardContent {
+    gap: 24px;
+    width: 100%;
+    padding: 0 24px;
+  }
+  
+  .personalInfo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .personalItem {
+    h3 {
+      font-size: 1.2rem;
+    }
+    
+    p {
+      font-size: 0.95rem;
+    }
+  }
+}

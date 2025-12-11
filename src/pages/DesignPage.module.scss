@@ -1,0 +1,25 @@
+@import '../styles/globals/index.scss';
+
+.designPage {
+  padding: $spacing-xl 0;
+}
+
+.title {
+  margin-bottom: $spacing-2xl;
+  text-align: center;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.placeholder {
+  padding: $spacing-3xl;
+  background: rgba($primary, 0.1);
+  border: 2px dashed $primary-border;
+  border-radius: $radius-lg;
+  text-align: center;
+  color: $text-muted;
+  font-style: italic;
+}

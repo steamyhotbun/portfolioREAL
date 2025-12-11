@@ -1,0 +1,47 @@
+[
+  { 
+    "id": "corsace-closed-2024-2", 
+    "name": "Mountain Bike Commercial", 
+    "image": "proj_2", 
+    "tags": [
+      { "icon": "FaVideo", "label": "Video" }, 
+      { "icon": "FaCamera", "label": "Production" }
+    ] 
+  },
+  { 
+    "id": "video-storytelling-project-b-3", 
+    "name": "Travel Commercial", 
+    "image": "proj_3", 
+    "tags": [
+      { "icon": "FaVideo", "label": "Video" }, 
+      { "icon": "FaCamera", "label": "Production" }, 
+      { "icon": "FaPalette", "label": "Graphics" }
+    ] 
+  },
+  { 
+    "id": "corsace-closed-2024-1", 
+    "name": "Corsace Manga", 
+    "image": "proj_1", 
+    "tags": [
+      { "icon": "FaPalette", "label": "Graphics" }, 
+      { "icon": "FaUserTie", "label": "Product Manager" }
+    ] 
+  },
+  { 
+    "id": "corsace-rebrand-2025", 
+    "name": "Corsace Rebrand 2025", 
+    "image": "proj_4", 
+    "tags": [
+      { "icon": "FaPalette", "label": "Graphics" }, 
+      { "icon": "FaUserTie", "label": "Branding" }
+    ] 
+  },
+  { 
+    "id": "swiss-poster-miku-2024", 
+    "name": "Swiss Poster: Hatsune Miku", 
+    "image": "proj_5", 
+    "tags": [
+      { "icon": "FaPalette", "label": "Graphics" }
+    ] 
+  }
+]

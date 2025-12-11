@@ -1,0 +1,199 @@
+@import './globals/variables';
+@import './globals/mixins';
+
+// ============================================
+// Custom Fonts
+// ============================================
+
+@font-face {
+  font-family: 'NewCezanne Pro';
+  src: url('/src/assets/fonts/FOT-NewCezanne Pro M.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rodin Pro';
+  src: url('/src/assets/fonts/FOT-Rodin Pro B.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// ============================================
+// CSS Reset & Base Styles
+// ============================================
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NewCezanne Pro', 'Inconsolata', monospace;
+  color: $text-primary;
+  line-height: 1.6;
+  background-color: $bg-dark;
+  
+  // Logo background pattern with gradient overlay
+  background-image: linear-gradient(rgba(#1a181d, 0.8) 0%, rgba(#0f0e11, 0.9) 100%), url('/src/assets/icons/BG_LOGO.svg');
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, 400px 400px;
+  background-position: center, 0 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+// ============================================
+// Typography
+// ============================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rodin Pro', 'Inconsolata', monospace;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $text-primary;
+  margin-bottom: $spacing-md;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-stretch: expanded;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-stretch: expanded;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  margin-bottom: $spacing-md;
+  color: $text-secondary;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color $transition-normal;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+// ============================================
+// Layout
+// ============================================
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 320px;
+  min-height: 100vh;
+  padding: $spacing-xl;
+
+  @include mobile {
+    margin-left: 0;
+    margin-top: $mobile-header-height;
+    padding: $spacing-lg;
+  }
+}
+
+// ============================================
+// Accessibility
+// ============================================
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: $z-notification;
+  border-radius: 0 0 4px 0;
+  transition: top $transition-normal;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+}
+
+// ============================================
+// Scrollbar
+// ============================================
+
+* {
+  @include custom-scrollbar;
+}
+
+// ============================================
+// Utility Classes
+// ============================================
+
+.container {
+  max-width: $desktop;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $text-muted;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ============================================
+// Loading State
+// ============================================
+
+.page-loader {
+  @include flex-center;
+  min-height: 50vh;
+  font-size: 18px;
+  color: $text-muted;
+}

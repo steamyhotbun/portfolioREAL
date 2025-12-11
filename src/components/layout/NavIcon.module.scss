@@ -1,0 +1,29 @@
+.navIcon {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+
+.homeIcon,
+.aboutIcon,
+.galleryIcon {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.projectsIcon {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .navIcon {
+    display: none;
+  }
+}

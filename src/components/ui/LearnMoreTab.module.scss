@@ -1,0 +1,39 @@
+$tab-width: 400px;
+
+.learnMoreTab {
+  position: absolute;
+  right: -225px;
+  bottom: 170px;
+  width: $tab-width;
+  z-index: 1;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    filter: drop-shadow(0 0 8px rgba(185, 166, 230, 0.5));
+  }
+
+  .tabBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    width: $tab-width;
+    height: auto;
+  }
+
+  .tabImage {
+    width: $tab-width;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .learnMoreTab {
+    display: none !important;
+  }
+}

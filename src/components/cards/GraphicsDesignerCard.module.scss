@@ -1,0 +1,199 @@
+.graphicsDesignerPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.purpleAccent {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%) skewY(-2deg);
+  width: min(95vw, 1300px);
+  height: calc(100% - 69px);
+  background: #A585AE;
+  z-index: 0;
+}
+
+.cardContainer {
+  position: relative;
+  background: #232129;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 48px 0;
+  max-width: min(95vw, 1300px);
+  width: 100%;
+  min-height: 400px;
+  margin: 24px auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.graphicsDesignerCard {
+  width: 100%;
+}
+
+.graphicsDesignerCardContent {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  gap: 48px;
+  padding: 0 48px;
+}
+
+.videoSection {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 16px;
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+    align-self: flex-start;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: rgba(204, 204, 204, 0.9);
+    font-weight: 400;
+    align-self: flex-start;
+  }
+}
+
+.aboutLogo {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+.logoImage {
+  height: 100px;
+  max-width: 250px;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+.aboutQuote {
+  font-style: italic;
+  color: #b9a6e6;
+  font-weight: 500;
+  margin-top: 8px;
+  align-self: flex-start;
+}
+
+.demoVideo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+.findWork {
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+.workLink {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #b9a6e6;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .graphicsDesignerPanel {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cardContainer {
+    margin: 24px auto 0;
+    padding: 24px 0;
+    max-width: 95%;
+    min-height: auto;
+    width: 100%;
+  }
+  
+  .graphicsDesignerCardContent {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 24px;
+  }
+  
+  .textSection {
+    text-align: center;
+  }
+  
+  .demoVideo {
+    max-width: 100%;
+  }
+  
+  .graphicsDesignerCardContent {
+    gap: 24px;
+    width: 100%;
+    padding: 0 24px;
+  }
+  
+  .graphicsIntro {
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .logoImage {
+    height: 60px;
+    max-width: 150px;
+  }
+  
+  .aboutGallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .galleryItem {
+    width: 100%;
+    max-width: 250px;
+    height: 80px;
+  }
+}

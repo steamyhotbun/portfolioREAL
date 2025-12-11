@@ -1,0 +1,49 @@
+@import '../../styles/globals/index.scss';
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: $bg-primary;
+  z-index: $z-modal;
+  padding: 0;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+
+  // Hide on mobile
+  @include mobile {
+    display: none;
+  }
+}
+
+// ============================================
+// Profile Section
+// ============================================
+
+.navProfile {
+  position: fixed;
+  top: 0;
+  left: -20px;
+  width: 600px;
+  height: auto;
+  z-index: $z-notification;
+  pointer-events: none;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+// ============================================
+// Contact Section
+// ============================================
+
+.contact {
+  margin-top: auto;
+  padding: $spacing-md;
+}

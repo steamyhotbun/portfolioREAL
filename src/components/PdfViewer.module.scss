@@ -1,0 +1,37 @@
+.pdfViewerPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.pdfViewerContainer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  position: relative;
+}
+
+.pdfWrapper {
+  width: 100%;
+  height: 600px;
+  border-radius: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.pdfFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .pdfWrapper {
+    height: 400px;
+  }
+}

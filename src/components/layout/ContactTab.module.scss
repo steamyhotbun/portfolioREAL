@@ -1,0 +1,62 @@
+$tab-width: 320px;
+$tab-bg: #232129;
+$tab-shadow: 0 2px 12px rgba(0,0,0,0.2);
+
+.contactTab {
+  position: fixed;
+  left: 0;
+  bottom: -90px;
+  width: $tab-width;
+  z-index: 9999;
+  cursor: pointer;
+
+  .tabBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    width: $tab-width;
+    height: 200px;
+  }
+
+  .tabImage {
+    width: $tab-width + 9px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0px;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  }
+
+  .tabContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; 
+    justify-content: center;
+    gap: 32px;
+    width: $tab-width;
+    height: 1000px;
+    background: $tab-bg;
+    padding: 20px 100px;
+    padding-bottom: 100px;
+    border-radius: 0;
+    box-shadow: $tab-shadow;
+    position: relative;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+
+  &:hover .tabBox {
+    transform: translateY(-150px);
+  }
+
+  .iconLink {
+    color: #A585AE;
+    transition: filter 0.2s, transform 0.2s;
+    
+    &:hover {
+      filter: drop-shadow(0 0 8px #A585AE);
+      transform: scale(1.15);
+    }
+  }
+}

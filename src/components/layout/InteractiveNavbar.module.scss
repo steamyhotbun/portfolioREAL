@@ -1,0 +1,82 @@
+@import '../../styles/globals/variables';
+
+.navbarContainer {
+  position: fixed;
+  top: 300px;
+  left: 0;
+  width: 400px;
+  height: auto;
+  z-index: $z-notification;
+  pointer-events: none;
+}
+
+.navBase {
+  position: absolute;
+  top: -203px;
+  left: -60px;
+  width: 80%;
+  height: 660px; // Extend height here to make it longer
+  display: block;
+  pointer-events: none;
+}
+
+.navLink {
+  position: absolute;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  text-decoration: none;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.navSection {
+  width: 90%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  filter: drop-shadow(0 0 0 transparent);
+  
+  &:hover {
+    filter: drop-shadow(8px 0 8px rgba(165, 133, 174, 0.6));
+    transform: scale(1.02);
+  }
+}
+
+// Individual positioning for each nav section
+.navHome {
+  // Adjust top position here
+  position: relative;
+  top: -32px;
+  left: 80px;
+}
+
+.navAbout {
+  // Adjust top position here
+  position: relative;
+  top: 85px;
+  left: 100px;
+}
+
+.navGallery {
+  // Adjust top position here
+  position: relative;
+  top: 180px;
+  left: 20px;
+}
+
+.navProjects {
+  // Adjust top position here
+  position: relative;
+  top: 290px;
+  left: 60px;
+}
+
+.active {
+  filter: drop-shadow(12px 0 12px rgba(165, 133, 174, 0.8)) !important;
+  transform: scale(1.02) !important;
+}
