@@ -2,12 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/alden392/public_html/
-    - export NVM_DIR=$HOME/.nvm
-    - source $NVM_DIR/nvm.sh
-    - nvm install 18
-    - nvm use 18
-    - npm install
-    - npm run build
-    - find $DEPLOYPATH -mindepth 1 -delete
-    - cp -R dist/* $DEPLOYPATH/
-    - cp .htaccess $DEPLOYPATH/
+    - /usr/bin/npm install --legacy-peer-deps
+    - /usr/bin/npm run build
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -R dist/* $DEPLOYPATH/
+    - /bin/cp .htaccess $DEPLOYPATH/
