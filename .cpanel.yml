@@ -2,7 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/alden392/public_html/
-    - /usr/bin/npm install --legacy-peer-deps
-    - /usr/bin/npm run build
-    - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/cp -R dist/* $DEPLOYPATH/
+    - /bin/cp -R dist/* $DEPLOYPATH
