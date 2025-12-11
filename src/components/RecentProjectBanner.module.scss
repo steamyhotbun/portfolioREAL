@@ -1,0 +1,50 @@
+.bannerContainer {
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(90deg, #D3A7E0 100%);
+  padding: 0;
+  margin: 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  transform: rotate(-2deg);
+}
+
+.scroller {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-banner 60s linear infinite;
+  will-change: transform;
+}
+
+.bannerImage {
+  height: 64px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-banner {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .bannerContainer {
+    height: 40px;
+  }
+  
+  .bannerImage {
+    height: 40px;
+  }
+  
+  .scroller {
+    gap: 15px;
+  }
+}

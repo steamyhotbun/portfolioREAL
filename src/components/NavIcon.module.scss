@@ -1,0 +1,32 @@
+.navIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+
+.icon {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navIcon {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  
+  .icon {
+    display: none !important;
+  }
+}
+.icon {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}

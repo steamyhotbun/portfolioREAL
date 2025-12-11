@@ -1,0 +1,502 @@
+{
+  "corsace-closed-2024-1": {
+    "id": "corsace-closed-2024-1",
+    "title": "Corsace Manga",
+    "image": "proj_1",
+    "startDate": "March 9th, 2024",
+    "endDate": "July 19th, 2024",
+    "totalHours": "73",
+    "tags": [
+      { "icon": "FaPalette", "label": "Graphics" }, 
+      { "icon": "FaUserTie", "label": "Product Manager" }
+    ],
+    "description": "A creative manga project to promote an online gaming tournament and build a fanbase.",
+    "personalThoughts": "This project was what made me realize I wanted to join the New Media program. It taught me what taking initiative could do, it taught me that I could make things a reality if I put my mind to it. Our work got 3rd place in Namicomi and watching the community's reaction was incredibly humbling. We sold out books instantly and recently did a reprint this year that also instantly sold out!",
+    "details": {
+      "goal": "To launch a creative project to promote an online gaming tournament and build a fanbase",
+      "narrative": {
+        "planning": {
+          "description": "Started when I caught wind of Bae and Brandon joking about making a manga while I was social media manager. I was already working with Julia on character design for our tournament promotion. Knowing Bae's artistic talent and Brandon's management skills, I approached them to make it reality.",
+          "points": [
+            "Spent a week on logistics (timeframe, topic, publishing, workload)",
+            "Acted as product owner and company voice",
+            "Ensured script aligned with company goals and character design philosophies",
+            "Used Clip Paint Studio for storyboarding and GIMP for rough panel editing"
+          ]
+        },
+        "scriptwriting": {
+          "description": "Focused on keeping artists happy by preserving their ideas while steering away from excessive workload.",
+          "points": [
+            "Worked through 3 script versions with editing and proofreading in Google Docs",
+            "Chose themes of change, staff turnover, and finding purpose",
+            "Represented the harsh realities of running a gaming company in the osu! sphere"
+          ]
+        },
+        "storyboarding": {
+          "description": "Collaborated heavily with all artists on visual planning.",
+          "points": [
+            "Drew rough panels and crude sketches with motion arrows and emotion notes",
+            "Built actual sets in Minecraft for team participation and agreement",
+            "Ensured everyone could visualize and agree on story locations"
+          ]
+        },
+        "drawing": {
+          "description": "Was scrum master during production - kept everyone on track.",
+          "points": [
+            "Checked in with artists every other day",
+            "Always available for input and help when needed",
+            "Proofread and QA'd pages while being made to save time later"
+          ]
+        },
+        "publishing": {
+          "description": "Looked into how to actually get this thing published online.",
+          "points": [
+            "Hit up MangaDex first, they sent me to Namicomi",
+            "Got everything ready for when tournament launched",
+            "Tournament offered physical books - jumped on that opportunity",
+            "Did book typography in Photoshop"
+          ]
+        }
+      },
+      "actions": [
+        { "period": "Mar 9th – Mar 16th", "task": "Organization, planning", "hours": "20 hours" },
+        { "period": "Mar 16th – April 20th", "task": "Scriptwriting and Storyboarding", "hours": "20 hours" },
+        { "period": "April 23rd – May 20th", "task": "Scrum Meetings, Drawing Process", "hours": "20 hours" },
+        { "period": "June 1st – June 14th", "task": "Online and Book Publishing", "hours": "12 hours" },
+        { "period": "July 19th", "task": "Cover Typography", "hours": "1 hour" }
+      ],
+      "contributors": [
+        { "name": "Alden", "role": "Designer, Writer, Editor, Media/Creative Organizer" },
+        { "name": "Brandon (Fulserish)", "role": "Writer, Planner" },
+        { "name": "Bae (Honbae)", "role": "Lead Artist, Planner" },
+        { "name": "Julia (Nemururin)", "role": "Character Designer" },
+        { "name": "Mary (PeachMio)", "role": "Artist" },
+        { "name": "Liyah", "role": "Artist" },
+        { "name": "Piggy", "role": "Artist" }
+      ],
+      "technical": ["Figma", "GIMP", "Clip Paint Studio", "Photoshop", "Google Docs"],
+      "outcome": "Community reception was amazing; it was an awesome experience as people contacting from all over the gaming scene to congratulate us and say how much they appreciated it. The books were sold at a gaming event and sold instantly, which we were ecstatic about. It also got 3rd in Namicomi's popularity of the month which earned us a free Japanese translation. This project is what made me decide to join this program."
+    },
+    "links": {
+      "external": [
+        {
+          "title": "Corsace Website",
+          "description": "Official Corsace company website",
+          "url": "https://corsace.io/"
+        },
+        {
+          "title": "Corsace Twitch",
+          "description": "Live streaming and tournament broadcasts",
+          "url": "https://www.twitch.tv/corsace"
+        },
+        {
+          "title": "Corsace YouTube",
+          "description": "Tournament highlights and content",
+          "url": "https://www.youtube.com/@Corsace"
+        },
+        {
+          "title": "Corsace Manga - PDF",
+          "description": "Read the complete manga (PDF)",
+          "url": "https://drive.google.com/file/d/1ULJsLhs7MlaHCGahJvAumVEpg_qBMFwI/view?usp=drive_link"
+        }
+      ]
+    },
+    "info": {
+      "projectNumber": "03",
+      "program": "New Media Design & Web Development Program - BCIT School of Business",
+      "duration": "4 months, 3 weeks (March 9th - July 19th, 2024)",
+      "category": "Creative Design & Publishing",
+      "status": "Completed - Published & Printed"
+    }
+  },
+  "corsace-closed-2024-2": {
+    "id": "corsace-closed-2024-2",
+    "title": "Mountain Bike Commercial",
+    "image": "proj_2",
+    "startDate": "January 23rd, 2025",
+    "endDate": "February 27th, 2025",
+    "totalHours": "13",
+    "tags": [
+      { "icon": "FaVideo", "label": "Video" }, 
+      { "icon": "FaCamera", "label": "Production" }
+    ],
+    "description": "A promotional commercial for a fictitious mountain bike company using provided footage and self-produced video.",
+    "personalThoughts": "This was my first real dive into video production. Playing the role of a professional dirt biker while playing a persona was a humourous (especially to my partners) and enjoyable moment. This project is what lead me towards video production and storytelling. Our professor said it was the best project he had ever seen, which made me tear up a bit.",
+    "details": {
+      "goal": "Produce a commercial for a fictitious company using a mixture of provided footage and self-produced video to advertise and promote the brand",
+      "narrative": {
+        "planning": {
+          "description": "Team brainstormed our fake company brand and how to show it in the commercial.",
+          "points": [
+            "Reviewed provided footage and decided on cool, laidback, fun tone",
+            "Wanted to stay professional but not stuffy",
+            "Brand personality should come through naturally"
+          ]
+        },
+        "preparation": {
+          "description": "Figured out our main goals for the commercial.",
+          "points": [
+            "Keep viewer entertained throughout",
+            "Leave an impact that sticks",
+            "Company personality understood without being obvious",
+            "Semi-casual raw interview for authenticity"
+          ]
+        },
+        "filming": {
+          "description": "Set up proper lighting and filmed the interview segments.",
+          "points": [
+            "Three-point lighting setup with dressed actor",
+            "I played professional dirt biker being interviewed",
+            "Character was laid-back and cool to match brand",
+            "All answers improvised for authentic feel"
+          ]
+        },
+        "editing": {
+          "description": "Used Premiere Pro to combine action shots with interview.",
+          "points": [
+            "Interlaced action footage with interview segments",
+            "Applied color correction for consistent look",
+            "Created dynamic transitions between scenes",
+            "Aligned cuts with music timing for good pacing"
+          ]
+        },
+        "refinement": {
+          "description": "Finished with logo creation and final touches.",
+          "points": [
+            "Made company logo with clean italicized font and speed lines",
+            "Added glitch effect transition between logo and website",
+            "Matched gritty nature of the mountain bike footage"
+          ]
+        }
+      },
+      "actions": [
+        { "period": "Jan 30 – Feb 3", "task": "Brainstorm talking points, writing interview prompts", "hours": "2 hours" },
+        { "period": "Feb 3", "task": "Set up and film all video footage, acting as interviewer", "hours": "3 hours" },
+        { "period": "Feb 5", "task": "Compiling film/shots to be used", "hours": "1 hour" },
+        { "period": "Feb 15-17", "task": "Create first draft/structure of commercial", "hours": "1 hour" },
+        { "period": "Feb 17-22", "task": "Completing commercial", "hours": "2 hours" },
+        { "period": "Feb 21", "task": "Creating logo and adding company information", "hours": "1 hour" },
+        { "period": "Feb 22-27", "task": "Final edits and refinement", "hours": "3 hours" }
+      ],
+      "contributors": [
+        { "name": "Alden Talavera", "role": "Planning, Editing, Acting, Filming" },
+        { "name": "Yuhan Liu", "role": "Planning, Sound Design, Filming" },
+        { "name": "Ella Bohn", "role": "Planning, Editing, Filming" }
+      ],
+      "technical": ["Adobe Premiere Pro", "Adobe Illustrator"],
+      "outcome": "The commercial successfully displayed personality and the editing paired with music created an entertaining video spectacle that left an impact on the class. Feedback noted the filmed audio had an echoey feel due to the shotgun mic used."
+    },
+    "links": {
+      "external": [
+        {
+          "title": "Planning Document",
+          "url": "https://docs.google.com/document/d/1wqj9uDbTRjWfT6pM4mfVQ3XVW1QSXcAps_mdiyW67UA/edit?usp=sharing"
+        },
+        {
+          "title": "Final Video",
+          "url": "https://youtu.be/dz1HDiWA__U?si=IhuiYqJcOQJ0ckqd"
+        }
+      ]
+    },
+    "info": {
+      "projectNumber": "01",
+      "program": "New Media Design & Web Development Program - BCIT School of Business",
+      "duration": "1 month, 4 days (January 23rd - February 27th, 2025)",
+      "category": "Video Production & Commercial Design",
+      "status": "Completed - Presented"
+    }
+  },
+  "video-storytelling-project-b-3": {
+    "id": "video-storytelling-project-b-3",
+    "title": "Travel Commercial",
+    "image": "proj_3",
+    "startDate": "December 5th, 2024",
+    "endDate": "April 17th, 2025",
+    "totalHours": "67",
+    "tags": [
+      { "icon": "FaVideo", "label": "Video" }, 
+      { "icon": "FaCamera", "label": "Production" }, 
+      { "icon": "FaPalette", "label": "Graphics" }
+    ],
+    "description": "A commercial for a fictitious travel company focusing on narrative advertising and meaningful human connections.",
+    "personalThoughts": "This project pushed our production group to the limit, taking multiple shots and days to record only a few mintues of actual footage. It was a bit more serious in nature which was a new challenge in itself. We went from cool in the motorcycle commercial to now sentimental and empathic.",
+    "details": {
+      "goal": "To create a commercial for a fictitious travel company",
+      "narrative": {
+        "planning": {
+          "description": "We were tasked with creating a storyboard for a commercial that advertised a fake company that we created earlier in the term. The company that we chose to work for was a travel agency. As it was a storytelling class, we felt it was appropriate to focus on narrative advertising.",
+          "points": [
+            "Focused on wholesome and heartfelt tone to leave lasting impression",
+            "Considered logistics: feasibility, technical requirements, locations, audio and pacing",
+            "Developed story about two artists supporting each other through social media",
+            "Showcased travel company's mission: To create meaningful connections with one another"
+          ]
+        },
+        "characterDevelopment": {
+          "description": "Had to make two distinct characters that felt real.",
+          "points": [
+            "Made one extroverted photographer, other introverted painter new to social media",
+            "Focused on body language and clothing to show personalities",
+            "Used different shot types for each character",
+            "Planned mood lighting to match their emotions"
+          ]
+        },
+        "storyboarding": {
+          "description": "Drew the storyboard once we had our plan figured out.",
+          "points": [
+            "I handled the second half of scenes using Clip Paint Studio",
+            "Captured expressions and tracked movement with arrows",
+            "Black arrows for character movement, red for camera movement",
+            "Labeled everything so it was easy to read"
+          ]
+        },
+        "scripting": {
+          "description": "Made a proper script with shot list after storyboard got approved.",
+          "points": [
+            "Continuity was huge - wanted to show friendship developing over time",
+            "Characters change outfits between scenes",
+            "Shot at different times of day to show time passing",
+            "Detailed shot list to prep for filming"
+          ]
+        },
+        "shooting": {
+          "description": "I was cameraman for most shoots, directed the shots.",
+          "points": [
+            "Used rule of thirds and got diverse range of shots",
+            "Split filming into 3 days: inside, outdoors, pickup shots",
+            "Wireless lavalier mics for intimate narration feel",
+            "Lots of material to work with in editing"
+          ]
+        },
+        "editing": {
+          "description": "Started editing after first two days of shooting.",
+          "points": [
+            "Put footage together in Premiere Pro following storyboard",
+            "I did clip cutting and pacing adjustments",
+            "Too many scenes for 5-minute limit",
+            "Had to scrap scenes and cut stuff that ran too long"
+          ]
+        },
+        "afterEffects": {
+          "description": "Learned After Effects and went back to improve text stuff.",
+          "points": [
+            "Replaced Premiere text Mogrts with After Effects for more control",
+            "Made custom textbox component with pen tool",
+            "Animated with motion blur, keyframes and opacity",
+            "Added tracking with Null boxes and dynamic scaling with source code"
+          ]
+        }
+      },
+      "actions": [
+        { "period": "Dec 3rd – Dec 10th", "task": "Commercial brainstorming/planning", "hours": "4 hours" },
+        { "period": "Dec 11th – 13th", "task": "Drawing the storyboard", "hours": "8 hours" },
+        { "period": "Mar 11th – Mar 14th", "task": "Character designs, shot list, dialogue, updated planning sheet", "hours": "5 hours" },
+        { "period": "Mar 14th – Apr 9th", "task": "Filming", "hours": "30 hours" },
+        { "period": "April 9th – Apr 17th", "task": "Editing, Refinement, Exporting", "hours": "20 hours" }
+      ],
+      "contributors": [
+        { "name": "Alden", "role": "Planning, Filming, Directing, Editing, Storyboarding" },
+        { "name": "Ella", "role": "Planning, Acting, Editing, Storyboarding" },
+        { "name": "Yuhan", "role": "Planning, Acting, Editing, Sound Design" }
+      ],
+      "technical": ["Clip Paint Studio", "Adobe Photoshop", "Adobe After Effects", "Adobe Premier Pro"],
+      "outcome": "It was well received! I think we did a great job aligning the tone of the commercial with the wholesome message of the company which was to connect others. If there was one thing I would have liked to fix in the future it would have been to also implement color correction into the footage as I feel it would further enhance the color mood themes we hid within the commercial."
+    },
+    "links": {
+      "external": [
+        {
+          "title": "Original Commercial Edit",
+          "description": "Watch the final commercial on YouTube",
+          "url": "https://www.youtube.com/watch?v=7Y2b2igMHSk"
+        }
+      ]
+    },
+    "info": {
+      "projectNumber": "02",
+      "program": "New Media Design & Web Development Program - BCIT School of Business",
+      "duration": "4 months, 12 days (December 5th, 2024 - April 17th, 2025)",
+      "category": "Video Storytelling & Commercial Production",
+      "status": "Completed - Published"
+    }
+  },
+  "corsace-rebrand-2025": {
+    "id": "corsace-rebrand-2025",
+    "title": "Corsace Rebrand 2025",
+    "image": "proj_4",
+    "startDate": "January 1st, 2025",
+    "endDate": "July 19th, 2025",
+    "totalHours": "33",
+    "tags": [
+      { "icon": "FaPalette", "label": "Graphics" }, 
+      { "icon": "FaUserTie", "label": "Creative Lead" }
+    ],
+    "description": "A comprehensive rebranding project to launch 2025 tournaments under new Corsace branding, symbolizing company transformation.",
+    "personalThoughts": "I can't post a lot of about this just yet because I decided to make the call to postpone production until 2026 when the team feels more prepared. I'm personally excited to be more involved in the creative direction, it's crazy to think about how much I've grown since I started media with Corsace. I wen't from someone who knew almost 0 about design and media to a person who lives and breathes it. I'll update this project in 2026 once we reveal everything so stay tuned!",
+    "details": {
+      "goal": "Launch 2025 tournaments and projects under new Corsace branding to symbolize company transformation. Utilized After Effects, Photoshop, and Illustrator to create comprehensive tournament assets and establish new brand identity while respecting company history.",
+      "narrative": {
+        "background": {
+          "description": "Corsace is a gaming company focused on osu!, hosting major community tournaments. Originally brought in as social media manager in 2020, I excelled in boosting social media impressions and created structure within the design team using agile methods.",
+          "points": [
+            "Promoted to creative lead after successful social media management",
+            "Led design team to create tournament assets and creative projects",
+            "Company faced community drama and underwent major staff restructuring",
+            "Decided to rebrand to represent realignment with community-focused goals"
+          ]
+        },
+        "preparation": {
+          "description": "Conducted meetings with head designer Kay starting in January to brainstorm rebranding approach.",
+          "points": [
+            "Maintained similar clean, modern font style to avoid community whiplash",
+            "Preserved main color scheme (red for Corsace Open, yellow for Corsace Closed)",
+            "Incorporated elements from old logo to show evolution, not replacement",
+            "Focused on simple, fun, and exciting traits for the new brand identity"
+          ]
+        },
+        "logo design": {
+          "description": "Collaborated on creating the new logo while respecting the decade-long history of the previous design.",
+          "points": [
+            "Sketched flower designs using Illustrator's radial pattern tool",
+            "Settled on 5-petal sheared design for visual interest",
+            "Added rounded plus symbol as homage to previous logo's plus/dot elements",
+            "Revealed the rebrand publicly during \"A Year in Mapping\" project"
+          ]
+        },
+        "asset creation": {
+          "description": "Oversaw creation of tournament assets and mascot design for Corsace Closed 2025.",
+          "points": [
+            "Played overseer role, identifying design flaws and brand confusion risks",
+            "Drew inspiration from Zenless Zone Zero for street/tech aesthetic",
+            "Sketched mascot ideas and created mood boards for character design",
+            "Handled transition stingers and idle animations using After Effects"
+          ]
+        }
+      },
+      "actions": [
+        { "period": "Jan 1st – Mar 1st", "task": "Brainstorming and concept development", "hours": "10 hours" },
+        { "period": "Mar 1st – April", "task": "Logo designing and refinement", "hours": "5 hours" },
+        { "period": "April 23rd", "task": "Asset review and refinement", "hours": "3 hours" },
+        { "period": "May 3rd – 17th", "task": "Character designing and mood boards", "hours": "10 hours" },
+        { "period": "May 17th – 24th", "task": "Asset animations and final delivery", "hours": "5 hours" }
+      ],
+      "contributors": [
+        { "name": "Alden", "role": "Designer, Media/Creative Organizer, Creative Lead" },
+        { "name": "Kay (Kaetwo)", "role": "Lead Designer" },
+        { "name": "Julia (Nemururin)", "role": "Character Artist" }
+      ],
+      "technical": ["Adobe After Effects", "Adobe Photoshop", "Adobe Illustrator", "Figma", "Clip Paint Studio"],
+      "outcome": "Community reception was mixed as expected - some enjoyed the new logo and rebranding attempts while others missed the historical design. Successfully made the creative branding jump and motivated the team to explore new design directions. Lead designer Kay praised my design growth and creative vision, noting tremendous improvement in skill and efficiency."
+    },
+    "links": {
+      "external": [
+        {
+          "title": "Corsace Website",
+          "description": "Official Corsace company website with new branding",
+          "url": "https://corsace.io/"
+        },
+        {
+          "title": "Corsace Closed 2025",
+          "description": "Tournament featuring the new brand assets",
+          "url": "https://closed.corsace.io/"
+        },
+        {
+          "title": "Intro Bumper",
+          "description": "Watch the intro bumper video",
+          "url": "demo_1.mp4",
+          "type": "video"
+        }
+      ]
+    },
+    "info": {
+      "projectNumber": "04",
+      "program": "New Media Design & Web Development Program - BCIT School of Business",
+      "duration": "6 months, 18 days (January 1st, 2025 - July 19th, 2025)",
+      "category": "Brand Design & Creative Direction",
+      "status": "Completed - Implemented"
+    }
+  },
+  "swiss-poster-miku-2024": {
+    "id": "swiss-poster-miku-2024",
+    "title": "Swiss Poster: Hatsune Miku",
+    "image": "proj_5",
+    "startDate": "October 2024",
+    "endDate": "October 2024",
+    "totalHours": "18",
+    "tags": [
+      { "icon": "FaPalette", "label": "Graphics" }
+    ],
+    "description": "A Swiss-style poster design featuring Hatsune Miku, blending modern tech aesthetics with classic design principles.",
+    "personalThoughts": "This project was like a puzzle and a game rolled into one. Taking inspiration from Valorant's tech style and applying it to a Swiss poster format taught me that I genuinely enjoy poster design. The process of learning the fundamentals, planning the composition, and experimenting with the layout was incredibly satisfying.",
+    "details": {
+      "goal": "To create a Swiss-style poster for the Hatsune Miku tour, combining modern tech aesthetics with traditional design principles",
+      "narrative": {
+        "research": {
+          "description": "Dove into Swiss design fundamentals and studied modern tech aesthetics like Valorant's visual language.",
+          "points": [
+            "Researched Swiss poster design principles and grid systems",
+            "Analyzed Valorant's UI and tech-forward visual style",
+            "Looked at successful tour posters for compositional ideas",
+            "Identified how to blend geometric precision with contemporary energy"
+          ]
+        },
+        "planning": {
+          "description": "Sketched out multiple composition ideas to find the perfect balance.",
+          "points": [
+            "Created rough layout sketches testing different grid systems",
+            "Planned hierarchy of information (artist name, tour dates, visual elements)",
+            "Decided on color palette inspired by Miku's iconic cyan",
+            "Mapped out where photo elements would intersect with typography"
+          ]
+        },
+        "experimentation": {
+          "description": "Used Adobe InDesign and Photoshop to bring the vision to life.",
+          "points": [
+            "Cropped and edited Miku photos in Photoshop for clean integration",
+            "Built precise grid system in InDesign for Swiss-style structure",
+            "Experimented with typography scale and weight relationships",
+            "Tested different geometric shape overlays for tech aesthetic",
+            "Iterated on color blocking to create visual interest"
+          ]
+        },
+        "refinement": {
+          "description": "Polished the final design through careful adjustments.",
+          "points": [
+            "Fine-tuned spacing and alignment for pixel-perfect precision",
+            "Adjusted contrast between background and foreground elements",
+            "Ensured readability while maintaining visual impact",
+            "Added final tech-inspired graphic elements"
+          ]
+        }
+      },
+      "actions": [
+        { "period": "Day 1", "task": "Research Swiss design and modern tech aesthetics", "hours": "4 hours" },
+        { "period": "Day 1-2", "task": "Sketching and planning compositions", "hours": "3 hours" },
+        { "period": "Day 2", "task": "Photo editing and preparation in Photoshop", "hours": "3 hours" },
+        { "period": "Day 2-3", "task": "Building layout and grid in InDesign", "hours": "4 hours" },
+        { "period": "Day 3", "task": "Experimentation with typography and shapes", "hours": "2 hours" },
+        { "period": "Day 3", "task": "Final refinements and adjustments", "hours": "2 hours" }
+      ],
+      "technical": [
+        "Adobe InDesign",
+        "Adobe Photoshop"
+      ],
+      "contributors": [
+        {
+          "name": "Alden Paroni",
+          "role": "Designer"
+        }
+      ]
+    },
+    "info": {
+      "duration": "3 Days",
+      "status": "Completed"
+    }
+  },
+  "projectOrder": [
+    "corsace-closed-2024-2",
+    "video-storytelling-project-b-3", 
+    "corsace-closed-2024-1",
+    "corsace-rebrand-2025",
+    "swiss-poster-miku-2024"
+  ]
+}

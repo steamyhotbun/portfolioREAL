@@ -1,0 +1,74 @@
+// Color Palette
+$primary: #b9a6e6;
+$primary-dark: #9580c4;
+$primary-light: rgba(185, 166, 230, 0.8);
+$primary-faded: rgba(185, 166, 230, 0.6);
+$primary-border: rgba(185, 166, 230, 0.3);
+
+// Background Colors
+$bg-primary: #232129;
+$bg-secondary: #373737;
+$bg-dark: #000000;
+$bg-card: rgba(35, 33, 41, 0.9);
+$bg-card-hover: rgba(35, 33, 41, 0.95);
+$bg-overlay: rgba(40, 30, 60, 0.85);
+
+// Text Colors
+$text-primary: #b9a6e6;
+$text-secondary: rgba(185, 166, 230, 0.8);
+$text-muted: rgba(185, 166, 230, 0.6);
+$text-white: #fff;
+$text-dark: #666;
+
+// Spacing Scale
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 40px;
+$spacing-3xl: 50px;
+
+// Border Radius
+$radius-xs: 4px;
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 18px;
+$radius-xl: 20px;
+$radius-2xl: 24px;
+$radius-3xl: 25px;
+
+// Breakpoints
+$mobile-sm: 480px;
+$mobile: 768px;
+$tablet: 992px;
+$desktop: 1200px;
+
+// Transitions
+$transition-fast: 0.1s ease;
+$transition-normal: 0.2s ease;
+$transition-smooth: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Shadows
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+$shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+$shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.6);
+$shadow-glow: 0 0 20px rgba(185, 166, 230, 0.3);
+$shadow-glow-strong: 0 12px 40px #b9a6e6;
+
+// Z-index Scale
+$z-base: 1;
+$z-dropdown: 10;
+$z-overlay: 50;
+$z-modal: 100;
+$z-nav: 1000;
+$z-tooltip: 9999;
+
+// Font Families
+$font-primary: 'Inconsolata', monospace;
+
+// Backdrop Blur
+$blur-light: blur(4px);
+$blur-medium: blur(10px);
+$blur-heavy: blur(20px);

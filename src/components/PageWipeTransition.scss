@@ -1,0 +1,42 @@
+.page-transition-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.pink-wipe-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #D3A7E0 !important;
+  z-index: 1000;
+  pointer-events: none;
+  will-change: transform;
+  display: block;
+}
+
+/* Remove any pseudo-elements that might cause white afterimage */
+.pink-wipe-overlay::before,
+.pink-wipe-overlay::after {
+  display: none !important;
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  .page-content {
+    transition: none !important;
+  }
+  
+  .pink-wipe-overlay {
+    display: none;
+  }
+}

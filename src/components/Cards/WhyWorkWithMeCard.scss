@@ -1,0 +1,158 @@
+$card-radius: 32px;
+$card-shadow: 0 8px 32px rgba(0,0,0,0.5);
+$card-padding: 48px;
+$card-max-width: min(90vw, 1200px);
+
+.why-work-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.why-work-two-column {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  width: 100%;
+  max-width: 1800px;
+  
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 64px;
+  }
+}
+
+.why-work-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+// Title Section
+.why-work-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #FBEDFF;
+  text-align: center;
+  font-style: normal !important;
+  font-family: inherit !important;
+}
+
+.why-work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.why-work-card {
+  background: #1d1d1d;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  padding: 24px 32px;
+  width: min(85%, 900px);
+  max-width: min(85%, 900px);
+  margin: 0 auto;
+  color: #fff;
+  box-sizing: border-box;
+  outline: rgb(43, 43, 43) solid 5px;
+  transform: skew(-8deg);
+  transition: all 0.3s ease;
+  
+  // Counter-skew the content and make all text straight
+  .why-work-card-title,
+  .why-work-card-text {
+    transform: skew(8deg);
+    
+    // Ensure all nested text elements are straight
+    *, h1, h2, h3, h4, h5, h6, p, span, div, ul, ol, li {
+      transform: none !important;
+    }
+  }
+  
+  &:hover {
+    transform: skew(-8deg) translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  
+  @media (max-width: 1024px) {
+    width: 650px;
+    max-width: 650px;
+    padding: 20px 28px;
+  }
+  
+  @media (max-width: 768px) {
+    width: 95%;
+    max-width: 95%;
+    padding: 18px 24px;
+    border-radius: 16px;
+    outline-width: 1px;
+    transform: none;
+    
+    // On mobile, everything is straight - no skewing needed
+    .why-work-card-title,
+    .why-work-card-text {
+      transform: none !important;
+    }
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+}
+
+.why-work-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #b9a6e6;
+  text-transform: capitalize;
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+.why-work-card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+  font-style: normal !important;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .why-work-title {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+}

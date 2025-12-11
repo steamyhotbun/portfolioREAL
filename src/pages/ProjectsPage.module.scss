@@ -1,0 +1,258 @@
+@import '../styles/globals/variables';
+@import '../styles/globals/mixins';
+
+.projectsContainer {
+  margin-top: 100px;
+}
+
+.projectsGridContainer {
+  padding: $spacing-sm $spacing-lg $spacing-lg $spacing-lg;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: clamp(16px, 1.5vw, 32px);
+  justify-content: center;
+  align-items: start;
+  margin-top: $spacing-xl;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  
+  @include responsive(desktop) {
+    gap: clamp(14px, 1.3vw, 24px);
+  }
+  
+  @include responsive(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(12px, 1.5vw, 20px);
+  }
+}
+
+.projectItem {
+  @include skew-desktop;
+  transition: transform $transition-smooth;
+  width: 100%;
+}
+
+/* Search Bar Styles */
+.searchContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  margin: $spacing-xl 0;
+  padding: 0 $spacing-lg;
+  width: 100%;
+}
+
+.searchWrapper {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  transform: skew(-2deg);
+}
+
+.searchInput {
+  @include input-base;
+  width: 100%;
+  padding-left: 50px;
+  
+  &::placeholder {
+    text-transform: lowercase;
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $text-muted;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Filter Icons */
+.filterContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.filterIcon {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(35, 33, 41, 0.5);
+  border: 2px solid rgba(138, 110, 168, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 26px;
+  color: #8a6ea8;
+
+  &:hover {
+    background: rgba(138, 110, 168, 0.2);
+    border-color: rgba(185, 166, 230, 0.5);
+    transform: translateY(-2px);
+    color: #b9a6e6;
+  }
+
+  &.active {
+    background: rgba(185, 166, 230, 0.3);
+    border-color: #b9a6e6;
+    color: #b9a6e6;
+    box-shadow: 0 0 15px rgba(185, 166, 230, 0.4);
+  }
+
+  &::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(35, 33, 41, 0.95);
+    color: #FBEDFF;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: 8px;
+    border: 1px solid rgba(185, 166, 230, 0.3);
+    z-index: 1000;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.noResults {
+  text-align: left;
+  color: $text-secondary;
+  margin: $spacing-lg 0;
+  font-family: $font-primary;
+  transform: skew(-8deg);
+  padding: $spacing-lg;
+
+  p {
+    margin: $spacing-xs 0;
+    font-size: 18px;
+
+    &:first-child {
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+}
+
+/* Mobile styles */
+@include responsive(mobile) {
+  .projectsContainer {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  
+  .searchContainer {
+    margin: $spacing-sm 0;
+    padding: 0 10px;
+  }
+  
+  .searchWrapper {
+    max-width: 100%;
+    transform: none;
+  }
+  
+  .searchInput {
+    padding: $spacing-sm $spacing-md $spacing-sm 40px;
+    font-size: 14px;
+    border-radius: $radius-xl;
+  }
+  
+  .searchIcon {
+    left: 14px;
+    font-size: 13px;
+  }
+  
+  .noResults {
+    transform: none;
+    padding: 15px;
+    margin: $spacing-lg 0;
+    
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  .projectsGridContainer {
+    padding: $spacing-md 0;
+  }
+  
+  .projectGrid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: $spacing-lg;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .projectItem {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@include responsive(mobile-sm) {
+  .projectsContainer {
+    margin-top: $spacing-lg;
+    padding: 0 $spacing-xs;
+  }
+  
+  .searchContainer {
+    margin: 10px 0;
+    padding: 0 $spacing-xs;
+  }
+  
+  .searchInput {
+    padding: 10px 14px 10px 36px;
+    font-size: 13px;
+    border-radius: $radius-lg;
+  }
+  
+  .searchIcon {
+    left: $spacing-sm;
+    font-size: 12px;
+  }
+  
+  .noResults {
+    padding: $spacing-sm;
+    margin: $spacing-md 0;
+    
+    p {
+      font-size: 14px;
+      
+      &:first-child {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .projectGrid {
+    padding: 0 $spacing-sm;
+    gap: $spacing-md;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "description": "With a diverse skill set spanning creative design, web development, and project management, I bring a comprehensive approach to every project. From crafting visual experiences with Adobe Creative Suite to building responsive web applications with modern frameworks, I combine technical expertise with creative vision to deliver impactful solutions.",
+  "design": {
+    "title": "Design & Creative",
+    "skills": [
+      "Photoshop",
+      "Illustrator", 
+      "After Effects",
+      "Premiere Pro",
+      "Figma",
+      "Graphics Design",
+      "Video Editing",
+      "Motion Graphics",
+      "UI/UX Design"
+    ]
+  },
+  "development": {
+    "title": "Development",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Git/GitHub",
+      "SCSS/Sass"
+    ]
+  },
+  "management": {
+    "title": "Management & Soft Skills",
+    "skills": [
+      "Media Management",
+      "Project Management",
+      "Team Collaboration",
+      "Content Creation",
+      "Problem Solving",
+      "Communication"
+    ]
+  }
+}
